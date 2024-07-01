@@ -15,14 +15,14 @@ En este laboratorio llevaremos a cabo las siguientes tareas:
 - El acceso a FortiWeb Cloud puede llevarse a cabo desde la siguiente URL: [FortiWeb Cloud](http://www.fortiweb-cloud.com/)
 - Seleccionamos la opción Login
 
-![image1-3.png](images/image1-3.png)
+<p align="center"><img src="images/image1-1.png" width="70%" align="center"></p>
 
 - En las opciones de Login seleccionaremos la opción IAM Login y utilizaremos las credenciales que nos facilita el [portal](https://www.fortidemoscloud.com) 
 
-<p align="center"><img src="images/image1-2-2.png" width="50%" align="center"></p>
-<p align="center"><img src="images/image1-1.png" width="60%" align="center"></p>
+<p align="center"><img src="images/image1-2.png" width="50%" align="center"></p>
+<p align="center"><img src="images/image1-3.png" width="60%" align="center"></p>
 
-En este primer login será necesario validar la cuenta de cada usuario para lo que se debe facilitar un token que se envía a la cuenta de correo del usuario. Para consultar dicho token se debe acceder al correo electrónico del usuario en el servidor https://mail.fortidemoscloud.com con las mismas credenciales de acceso que se han facilitado en el portal de inicio (###usuario###@fortidemoscloud.com)
+En este primer login será necesario validar la cuenta de cada usuario para lo que se debe facilitar un token que se envía a la cuenta de correo del usuario. Para consultar dicho token se debe acceder al correo electrónico del usuario en el servidor https://mail.fortidemoscloud.com con las mismas credenciales de acceso que se han facilitado en el portal de inicio (###user_id###@fortidemoscloud.com)
 
 <p align="center"><img src="images/image1-4.png" width="50%" align="center"></p>
 
@@ -33,14 +33,14 @@ En este primer login será necesario validar la cuenta de cada usuario para lo q
 - En el menú de la izquierda seleccionaremos `Global > Applications`
 - Dentro de la sección Aplicaciones, clicaremos en `ADD APPLICATION` para arrancar el wizard de alta de la aplicación.
 
-![image2-1-2.png](images/image2-1-2.png)
+<p align="center"><img src="images/image2-1.png" width="70%" align="center"></p>
 
 - Wizard step 1: Nombre de aplicación y dominio
 
     * **Web Application Name**: `user_id`-dvwa (Usuario FortiCloud asignado, ejemplo: fortixpert0-dvwa) - este valor no es más que un identificador dentro del portal para organizar las diferentes aplicaciones
     * **Domain Name**: `user_id`-dvwa.hol.fortidemoscloud.com (ejemplo: fortixpert0-dvwa.hol.fortidemoscloud.com) - este valor es el que va a determinar que FQDN va a tener nuestra aplicación y que posteriormente a nivel DNS redirigiremos a FortiWeb Cloud
 
-![image2-3.png](images/image2-3.png)
+<p align="center"><img src="images/image2-2.png" width="70%" align="center"></p>
 
 - Wizard step 2: Protocolo, puertos e IP origen del servidor
   
@@ -52,14 +52,18 @@ En este primer login será necesario validar la cuenta de cada usuario para lo q
 > [!TIP]
 Puedes obtener la IP pública de tu aplicación DVWA en los datos de laboratorio, en la parte de _"Acceso a tus aplicaciones > dvwa_url"_
 
-![image2-4-2.png](images/image2-4-2.png)
+<p align="center"><img src="images/image2-3.png" width="70%" align="center"></p>
+
+No olvides testear el servidor para comprobar la correcta conexión entre FortiWeb Cloud y la aplicación:
+
+<p align="center"><img src="images/image2-4.png" width="70%" align="center"></p>
 
 - Wizard step 3: CDN
   
     * **NO habilitaremos** servicios de CDN
     * La plataforma nos ofrecerá como ubicación para nuestra instancia la región más cercana a nuestra aplicación (para el workshop usamos las regiones de Irlanda, Londres y París)
 
-<p align="center"><img src="images/image2-5.png"></p>
+<p align="center"><img src="images/image2-5.png" width="70%" align="center"></p>
 
 - Wizard step 4: Habilitar modo bloqueo y asignar template a la aplicación
   
@@ -67,7 +71,7 @@ Puedes obtener la IP pública de tu aplicación DVWA en los datos de laboratorio
     * Template: `dvwa-hol-template` (selecionamos este template en el desplegable)
     * NOTA: el template permite definir qué funcionalidades de FortiWeb Cloud queremos habilitar para nuestra aplicación
 
-![image2-6.png](images/image2-6.png)
+<p align="center"><img src="images/image2-6.png" width="70%" align="center"></p>
 
 - Completado:
   
@@ -77,12 +81,11 @@ Puedes obtener la IP pública de tu aplicación DVWA en los datos de laboratorio
 > [!TIP]
 Copiar el nuevo FQDN para utilizar en el siguiente punto donde modificaremos los registros DNS de nuestro dominio
 
-![image2-7.png](images/image2-7.png)
+<p align="center"><img src="images/image2-7.png" width="70%" align="center"></p>
 
 - En el menú general de aplicaciones podremos ver cómo FortiWeb Cloud de forma automática ha seleccionado el centro de limpieza de FortiWeb Cloud más cercano a la aplicación y en el mismo Cloud Provider. A continuación se facilita un listado con los diferentes scrubbing centers disponibles a día de hoy ([FortiWeb Cloud scrubbing centers](https://docs.fortinet.com/document/fortiweb-cloud/24.2.0/user-guide/847410/restricting-direct-traffic-allowing-fortiweb-cloud-ip-addresses))
 
-![image2-8.png](images/image2-8.png)
-
+<p align="center"><img src="images/image2-8.png" width="70%" align="center"></p>
 
 ### 2.1. Creación de nuevo CNAME para aplicación DVWA
 
@@ -92,26 +95,26 @@ Para facilitar el acceso seguro a la nueva aplicación a través de FortiWeb Clo
 
 - Selecciona la organización HoL.
 
-<p align="center"><img src="images/image2-9.png" width="80%"></p>
+<p align="center"><img src="images/image2-9.png" width="80%" align="center"></p>
 
 - Selecciona "DNS Services" en el menú de la izquierda, donde aparecen las zonas DNS relacionadas con esta organización.
 
-<p align="center"><img src="images/image2-10.png" width="50%"></p>
+<p align="center"><img src="images/image2-10.png" width="50%" align="center"></p>
 
 - Selecciona la entrada "HoL" y editala para añadir una nueva entrada, bóton lapiz que encontrarás a la derecha. 
 
-![image2-11.png](images/image2-11.png)
+<p align="center"><img src="images/image2-11.png" width="70%" align="center"></p>
 
 - En la parte inferior de la entrada, tras los parámetros de definición de la misma, encontrarás el menú para crear un nuevo registro de tipo CNAME. 
 
-![image2-12.png](images/image2-12.png)
+<p align="center"><img src="images/image2-12.png" width="70%" align="center"></p>
 
 - La entrada CNAME corresponde al FQDN que has obtenido al dar de alta la aplicación en FortiWeb Cloud.
   
     * Alias: `user_id`-dvwa (ejemplo: fortixpert0-dvwa)
     * Target: `<FortiWeb Cloud FQDN>` (ejemplo: fortixpert0-dvwa.hol.fortidemoscloud.com.P911111111.fortiwebcloud.net.)
 
-<p align="center"><img src="images/image2-13.png" width="50%"></p>
+<p align="center"><img src="images/image2-13.png" width="50%" align="center"></p>
 
 > [!WARNING]
 > Es importante que incluyas un "." al final de la entrada de Target
