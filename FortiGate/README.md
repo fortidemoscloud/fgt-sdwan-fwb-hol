@@ -1,4 +1,4 @@
-## [FortiGate SDWAN](./FortiGate)
+## [FortiGate SDWAN](./)
 @NetDevOps, @SDWAN, @AWS Transit Gateway, @disponibilidad global
 
 En este laboratorio llevaremos a cabo las siguientes tareas:

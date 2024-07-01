@@ -1,4 +1,4 @@
-## [FortiWeb Cloud](./FortiWeb)
+## [FortiWeb Cloud](./)
 
 En este laboratorio llevaremos a cabo las siguientes tareas:
 

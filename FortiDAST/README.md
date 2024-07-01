@@ -1,4 +1,4 @@
-## [FortiDAST](./FortiDAST)
+## [FortiDAST](./)
 
 En este laboratorio llevaremos a cabo las siguientes tareas:
 

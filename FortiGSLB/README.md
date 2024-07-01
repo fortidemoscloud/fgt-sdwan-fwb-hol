@@ -1,4 +1,4 @@
-## [FortiGSLB](./FortiGSLB)
+## [FortiGSLB](./)
 
 En este laboratorio llevaremos a cabo las siguientes tareas:
 - Dar de alta nuestra aplicación como server del servicio GSLB.
