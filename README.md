@@ -1,8 +1,8 @@
-# Hands on Lab Seguridad Aplicaciones Web & API
+# Hands on Lab Cloud Networking y Seguridad Aplicaciones Web & API
 
 ## Objetivo del laboratorio
 
-El objetivo de este laboratorio es conocer la propuesta de valor de Fortinet para proteger aplicaciones web y APIs a través de sus soluciones de FortiWeb Cloud, FortiDAST y FortiGSLB. Durante el workshop se publicarán 2 aplicaciones de forma segura a través de FortiWeb Cloud simulando un entorno corporativo, con un portal web y una API. En el proceso aprenderás a entrenar el modelo de Machine Learning (ML) de la API para conocer el esquema OpenAPI de la misma y aplicar mecanismos de protección sobre el mismo y también cómo proteger portales web frente a ataques TOP10 OWASP y otros ataques sofisticados.
+El objetivo de estos laboratorios es conocer la propuesta de valor de Fortinet para proteger una aplicación web y una API desplegadas en un public cloud e integrada en una architectura de comunicaciones SDWAN multi-HUB. Las soluciones que harán posible esta protección son: FortiGate, FortiWeb Cloud, FortiDAST y FortiGSLB. En el workshop cada participante cuenta con un entorno en AWS compuesto de un fortigate publicando dos aplicaciones desplegadas en un nodo de Kubernetes. Durante el workshop se trabajará en conocer mejor la arquitectura SDWAN e integración con los servicios de routing del cloud provider y se llevará a cabo la publicación de las aplicacones a través de FortiWeb Cloud. En el proceso aprenderás a entrenar el modelo de Machine Learning (ML) de la API para conocer el esquema OpenAPI de la misma y aplicar mecanismos de protección sobre el mismo y también cómo proteger portales web frente a ataques TOP10 OWASP y otros ataques sofisticados.
 
 Al margen de ello podremos comprobar el valor añadido que puede aportar nuestro servicio FortiDAST para evaluar de forma continua la postura de seguridad de nuestras aplicaciones y APIs.
 
@@ -64,6 +64,6 @@ En este laboratorio llevaremos a cabo las siguientes tareas:
 - Dar de alta nuestra aplicación como server del servicio GSLB.
 - Añadir nueevo virtual server al servicio GSLB ya configurado en FortiGSLB.
 
-# Support
+## Support
 This a personal repository with goal of testing and demo Fortinet solutions on the Cloud. No support is provided and must be used by your own responsability. Cloud Providers will charge for this deployments, please take it in count before proceed.
 

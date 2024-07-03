@@ -67,7 +67,7 @@ El escaneo llevará unos minutos, puedes aprovechar ese momento para ir familiar
 
 ![img1-18.png](images/img1-18.png)
 
-- Con esto concluye este laboratorio de FortiDAST y con él el workshop de Seguridad para aplicaciones web y API
+- Con esto concluye este laboratorio de FortiDAST y con él la parte del workshop dedicada a Seguridad para aplicaciones web y API
 
 
 

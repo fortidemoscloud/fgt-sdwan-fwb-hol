@@ -435,10 +435,6 @@ curl -v -X 'POST' 'https://fortixpert0-api.hol.fortidemoscloud.com/api/pet' -H '
 ```
 
 ## Laboratorio completado
-
-Una vez concluido este laboratorio es hora de Pasar al laboratorio 2: [FortiDAST](http://github.com/fortidemoscloud/fwb-fgslb-hol/tree/main/FortiDAST)
-
-# Support
-This a personal repository with goal of testing and demo Fortinet solutions on the Cloud. No support is provided and must be used by your own responsability. Cloud Providers will charge for this deployments, please take it in count before proceed.
+Una vez concluido este laboratorio es hora de Pasar al laboratorio 3: [FortiDAST](http://github.com/fortidemoscloud/fwb-fgslb-hol/tree/main/FortiDAST)
 
 
